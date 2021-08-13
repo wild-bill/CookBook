@@ -1,0 +1,16 @@
+<html>
+<body>
+
+<p>Hello!</p>
+
+{% for recipe in recipes %}
+    <div>
+    <time>published: {{ recipe.published_date }}</time>
+    <h2>{{recipe.title}}</h2>
+    </div>
+{% endfor %}
+
+</body>
+</html>
+
+
