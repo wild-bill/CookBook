@@ -1,16 +1,13 @@
-<html>
-<body>
+{% extends 'cookbook/base.html' %}
 
-<p>Hello!</p>
-
-{% for recipe in recipes %}
-    <div>
-    <time>published: {{ recipe.published_date }}</time>
-    <h2>{{recipe.title}}</h2>
-    </div>
-{% endfor %}
-
-</body>
-</html>
-
-
+{% block content %}
+    {% for recipe in recipes %}
+        <article class="post">
+            <time class = "date">
+                {{ recipe.published_date }}
+           </time>
+           <h2><a href="">{{ recipe.title }}</a></h2>
+           <p>{{ recipe.text|linebreaksbr }}</p>
+        </article>
+    {% endfor %}
+{% endblock %}

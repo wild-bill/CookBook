@@ -1,0 +1,16 @@
+h2 {
+    color: #0000FF;
+}
+
+.post h2 a,
+.post h2 a:visited {
+    color: red;
+}
+
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited.
+.page-header h1 a:active {
+    color: #f0f0f0;
+    font-size: 36pt;
+}
