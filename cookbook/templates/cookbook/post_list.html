@@ -6,7 +6,7 @@
             <time class = "date">
                 {{ recipe.published_date }}
            </time>
-           <h2><a href="">{{ recipe.title }}</a></h2>
+           <h2><a href="{% url 'post_detail' pk=recipe.pk %}">{{ recipe.title }}</a></h2>
            <p>{{ recipe.text|linebreaksbr }}</p>
         </article>
     {% endfor %}
